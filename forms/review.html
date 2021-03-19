@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<title>Оставить отзыв на книгу</title>
+		
+		
+		<body>
+			<h1>Оставить отзыв на книгу</h1>
+			<form action="#" method="post" id="form-review">
+				<fieldset>
+					<legend>Оставить отзыв на книгу</legend>
+					<div>
+						<div><h2>Автор</h2><input type="text"/></div>
+						<div><h2>Название книги</h2><input type="text"/></div>
+						<div><h2>Жанр</h2><input type="text" list="type-book" name="type-book">
+						<datalist id="type-book">
+							<option value="Художественная">
+							<option value="Фантастика">
+							<option value="Сказки">
+						</datalist></div>
+						<div><h2>Когда прочитали.</h2><input type="date"/></div>
+						<div><h2>Как долго читали.</h2><input type="time"/></div>
+						<div><h2>Насколько Вам понравилось.</h2><input type="range"/></div>
+						<div><h2>Напишите Ваш отзыв.</h2><textarea></textarea></div>
+					</div>
+
+						</fieldset>
+					</form>
+
+					<input form="form-review" type="submit" value="Отправить отзыв" />
+					<input form="form-review" type="reset" value="Очистить форму" />
+
+
+					<a href="../index.html">Главная страинца</a>
+				</body>
+			</html>
