@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма входа</title>
+</head>
+<body>
+	<!-- action обрабаыватеся на серверной части, metod это способ передачи на сервер -->
+	<form action="#" method="post">
+		<fieldset > <!-- disabled отключается возможность ввода в форме -->
+			<legend>Данные авторизации</legend>
+		<div>
+			<!-- строчный, одиночный тэг -->
+			<input autofocus type="email" placeholder="Введите логин" name="login">
+		</div>
+		<div>
+			<input type="password" placeholder="Введите пароль" name="password">
+		</div>
+		</fieldset>
+		<div>
+			<label for=""><!-- привязка текст к элементу формы/ checked устанавилвает галочку -->
+				Запомнить: <input checked type="checkbox" name="remember" value="true"> 
+			</label>			
+		</div>
+		<input type="submit" value="Войти"> <!-- reset/button -->
+		<input type="reset">
+	</form>
+</body>
+</html>
