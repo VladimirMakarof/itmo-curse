@@ -10,44 +10,50 @@
 	<form action="#" method="post">
 		<fieldset>
 			<legend>Авторизация по электронной почте</legend>
-			 Выберите свою электронную почту
-				<input type="text" list="mail" name="mail">
-				<datalist id="mail">
-					<option value="mail">
-					<option value="yandex">
-					<option value="gmail">
-				</datalist>
+			<label for="mail">Впишите свою электронную почту</label>
 			<div>
-			<input type="submit" value="Войти" />
-			<input type="reset"/>
+				<input id="mail" autofocus type="text" list="mail" name="mail" placeholder="Email" autocomplete="on">
+			</div>		
+			<label for="mail-form">Выбирите свою почту</label>
+			<div>
+				<select id="mail-form" name="mail-form">
+					<option value="mail">Mail</option>
+					<option value="yandex">Yandex</option>
+					<option value="gmail">Gmail</option>
+				</select>
+			</div>	
+			<div>
+				<input type="submit" value="Войти"/>
+				<input type="reset" value="Очистить"/>
 			</div>
 			<hr>
 			<div>
-			<section>
-				<h2>Добавить книги</h2>
+		</fieldset>
+	</form>
+			<h2>Добавить книги</h2>
 				<!-- enctype добавляется для загрузки файлов -->
-				<form enctype="multipart/form-data" action="#" method="post">
-					<div>
-						<label for="genre" for="">Выбор жанра</label>
+			<form enctype="multipart/form-data" action="#" method="post">
+				<fieldset>
+					<legend>Добавить книгу</legend>
+				<div>
+						<label for="genre">Выбор жанра</label>
 						<select id="genre" name="genre">
-							<option value="genre1">Жанр 1</option>
-							<option value="genre2">Жанр 2</option>
-							<option value="genre3">Жанр 3</option>
+							<option value="genre1">Фантастика</option>
+							<option value="genre2">Эпос</option>
+							<option value="genre3">Сказка</option>
 						</select>
-					</div>
-					
 				</div>
 				<div>
-					<label for="title" for="">Введите названи книги</label>
-					<input id="title" type="text" name="title">
+					<label for="title">Введите названи книги</label>
+					<input id="title" type="text" name="title" placeholder="Название книги">
 				</div>
 				<div>
-					<label for="page-count">Укажите колличество страниц</label>
-					<input id="page-count" type="number" name="page-count">
+					<label for="page-count">Колличество страниц</label>
+					<input id="page-count" type="number" name="page-count" placeholder="Колличество страниц">
 				</div>
 				<div>
-					<lable>Описание книги</lable>
-					<textarea name="description" placeholder="Описание книги" value="" id=""></textarea>
+					<lable for="description">Описание книги</lable>
+					<textarea id="description" name="description" placeholder="Описание книги"></textarea>
 				</div>
 				<div>
 					<!-- accept="image/git, image/pbg" -->
@@ -59,26 +65,34 @@
 					<input id="pages" type="file" multiple name="pages[]">
 				</div>
 				<div><!--  группа чекбоксов -->	
-					<span>Возраст, для которого подходит книга
-					</span>	
-					<label><input type="checkbox" value="1" name="age[]">до 10</label>
-					<label><input type="checkbox" value="2" name="age[]">от 11 до 16</label>
-					<label><input type="checkbox" value="3" name="age[]">от 17 до 20</label>
-					<label><input type="checkbox" value="4" name="age[]"> от 21 до 25</label>
-					<label><input type="checkbox" value="5" name="age[]">от 26</label>			
+					<label for="age">Возраст, для которого подходит книга
+					</label>
+					<div>
+						<input id="age" type="checkbox" value="age-1" name="age[]">до 10
+					</div>
+					<div>
+						<input id="age" type="checkbox" value="age-2" name="age[]">от 11 до 16
+					</div>
+					<div>
+						<input id="age" type="checkbox" value="age-3" name="age[]">от 17 до 20
+					</div>
+					<div>
+						<input id="age" type="checkbox" value="age-4" name="age[]"> от 21 до 25
+					</div>
+					<div>
+						<input id="age" type="checkbox" value="age-5" name="age[]">от 26
+					</div>			
 				</div>
+
 				<div> <!-- группа радиокнопки -->
-					<span>Читали ли Вы книгу, которую хотите загрузить</span>
-					<label for=""><input id="" type="radio" name="read" value="yes">Да</label>
-					<label for=""><input id="" type="radio" name="read" value="no">Нет</label>
+					<label for="read">Читали ли Вы книгу, которую хотите загрузить</label>
+					<input id="read" type="radio" name="read" value="yes">Да
+					<input id="read" type="radio" name="read" value="no">Нет
 				</div>
 				<!-- submit, reset, button -->
-				<button type="submit" value="add">
-					Добавить
-				</button>
+				<button type="submit" value="add">Добавить</button>
 				<input type="reset" value="Очистить">
 			</form>
-		</section>
 		</fieldset>
 
 	</form>

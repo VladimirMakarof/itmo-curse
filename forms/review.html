@@ -5,35 +5,53 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 		<title>Оставить отзыв на книгу</title>
-		
-		
 		<body>
 			<h1>Оставить отзыв на книгу</h1>
 			<form action="#" method="post" id="form-review">
-				<fieldset>
+				<fieldset name="form">
 					<legend>Оставить отзыв на книгу</legend>
 					<div>
-						<div><h2>Автор</h2><input type="text"/></div>
-						<div><h2>Название книги</h2><input type="text"/></div>
-						<div><h2>Жанр</h2><input type="text" list="type-book" name="type-book">
-						<datalist id="type-book">
-							<option value="Художественная">
-							<option value="Фантастика">
-							<option value="Сказки">
-						</datalist></div>
-						<div><h2>Когда прочитали.</h2><input type="date"/></div>
-						<div><h2>Как долго читали.</h2><input type="time"/></div>
-						<div><h2>Насколько Вам понравилось.</h2><input type="range"/></div>
-						<div><h2>Напишите Ваш отзыв.</h2><textarea></textarea></div>
+						<div>
+							<label for="author-book">Автор</label>
+							<input id="author-book" type="text" name="author-book" placeholder="Автор книги" autofocus />
+						</div>
+						<div>
+							<label for="name-book">Название книги</label>
+							<input id="name-book" type="text" name="name-book" placeholder="Название книги" />
+						</div>
+						<div>
+							<label for="type-book-form">Жанр</label>
+							<input id="type-book-form" type="text" name="type-book-form" placeholder="Жанр">
+						</div>
+						<div>
+							<label for="type-book-list">Выберите жанр книги</label>
+							<select id="type-book-list" name="type-book-list">
+							<option value="Художественная">Художественная</option>
+							<option value="Фантастика">Фантастика</option>
+							<option value="Сказки">Сказки</option>
+						</select>
+
+						</div>
+						<div>
+							<label for="date">Когда прочитали.</label>
+							<input id="date" type="date" name="date" />
+						</div>
+						<div>
+							<label for="time">Как долго читали.</label>
+							<input id="time" type="time" name="time" />
+						</div>
+						<div>
+							<label for="range">Насколько Вам понравилось.</label>
+							<input id="range" type="range" name="range"/></div>
+						<div>
+							<label for="text-review">Напишите Ваш отзыв.</label>
+							<textarea id="text-review" name="text-review" placeholder="Напишите отзыв на книгу ... "></textarea>
+						</div>
 					</div>
-
-						</fieldset>
-					</form>
-
-					<input form="form-review" type="submit" value="Отправить отзыв" />
-					<input form="form-review" type="reset" value="Очистить форму" />
-
-
-					<a href="../index.html">Главная страинца</a>
-				</body>
-			</html>
+				</fieldset>
+			</form>
+			<input form="form-review" type="submit" name="submit" value="Отправить отзыв" />
+			<input form="form-review" type="reset" name="reset" value="Очистить форму" />
+			<div><a href="../index.html">Главная страинца</a></div>
+		</body>
+	</html>

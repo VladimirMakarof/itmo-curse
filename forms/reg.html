@@ -7,39 +7,32 @@
 	<title>Регистрация</title>
 </head>
 <body>
-    <h1>Регистрация</h1>
- 
+  <h1>Регистрация</h1>
   <form method="post" action="#">
     <div>
       <label for="name">Имя</label>
-      <input type="text" name="name" required>
+      <input id="name" type="text" name="name" autocomplete="on" autofocus required placeholder="Имя">
     </div>
-    <div class="">
-      <span>Пол</span>
-      <label>
-        <input type="radio" name="sex" value="мужской">мужской
-        <div class=""></div>
-      </label>
-      <label>
-        <input type="radio" name="sex" value="женский">женский
-        <div class=""></div>
-      </label>
+    <div>
+      <label for="sex">Пол</label>
+        <input id="sex" type="radio" name="sex" value="мужской">мужской
+        <input id="sex" type="radio" name="sex" value="женский">женский
     </div>
     <div>
       <label for="email">E-mail</label>
-      <input type="email" name="email" required>
+      <input id="email" type="email" name="email" autocomplete="on" required placeholder="E-mail">
     </div>
     <div>
       <label for="country">Страна</label>
-      <select name="country">
+      <select id="country" name="country">
         <option>Выберите страну проживания</option>
         <option value="Россия">Россия</option> 
         <option value="Украина">Украина</option> 
         <option value="Беларусь">Беларусь</option> 
       </select> 
-      <div class=""></div> 
+      <div></div> 
     </div> 
-    <button type="submit">Отправить</button> 
+    <button type="submit" name="submit">Отправить</button> 
   </form> 
 
 	<a href="../index.html">Главная страинца</a>

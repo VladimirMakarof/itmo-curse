@@ -13,19 +13,21 @@
 			<legend>Данные авторизации</legend>
 		<div>
 			<!-- строчный, одиночный тэг -->
-			<input autofocus type="email" placeholder="Введите логин" name="login">
+			<label for="email">Введите email</label>
+			<input autofocus id="email" type="email" placeholder="Введите email" name="email" autocomplete="on">
 		</div>
 		<div>
-			<input type="password" placeholder="Введите пароль" name="password">
+			<label for="password">Введите пароль</label>			
+			<input id="password" type="password" placeholder="Введите пароль" name="password">
 		</div>
 		</fieldset>
 		<div>
-			<label for=""><!-- привязка текст к элементу формы/ checked устанавилвает галочку -->
-				Запомнить: <input checked type="checkbox" name="remember" value="true"> 
-			</label>			
+			<!-- привязка текст к элементу формы/ checked устанавилвает галочку -->
+			<label for="remember">Запомнить: </label>
+				<input id="remember" checked type="checkbox" name="remember" value="true"> 
 		</div>
 		<input type="submit" value="Войти"> <!-- reset/button -->
-		<input type="reset">
+		<input type="reset" value="Сбросить">
 	</form>
 	<div><a href="../index.html">Главная страинца</a></div>
 </body>
