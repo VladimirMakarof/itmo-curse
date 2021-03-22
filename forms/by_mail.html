@@ -65,29 +65,36 @@
 					<input id="pages" type="file" multiple name="pages[]">
 				</div>
 				<div><!--  группа чекбоксов -->	
-					<label for="age">Возраст, для которого подходит книга
-					</label>
+					<span>Возраст, для которого подходит книга
+					</span>
 					<div>
-						<input id="age" type="checkbox" value="age-1" name="age[]">до 10
+						<input id="age-1" type="checkbox" value="age-1" name="age[]">
+						<label for="age-1">до 10</label>
 					</div>
 					<div>
-						<input id="age" type="checkbox" value="age-2" name="age[]">от 11 до 16
+						<input id="age-2" type="checkbox" value="age-2" name="age[]">
+						<label for="age-2">от 11 до 16</label>
 					</div>
 					<div>
-						<input id="age" type="checkbox" value="age-3" name="age[]">от 17 до 20
+						<input id="age-3" type="checkbox" value="age-3" name="age[]">
+						<label for="age-3">от 17 до 20</label>
 					</div>
 					<div>
-						<input id="age" type="checkbox" value="age-4" name="age[]"> от 21 до 25
+						<input id="age-4" type="checkbox" value="age-4" name="age[]"> 
+						<label for="age-4">от 21 до 25</label>
 					</div>
 					<div>
-						<input id="age" type="checkbox" value="age-5" name="age[]">от 26
+						<input id="age-5" type="checkbox" value="age-5" name="age[]">
+						<label for="age-5">от 26</label>
 					</div>			
 				</div>
 
 				<div> <!-- группа радиокнопки -->
-					<label for="read">Читали ли Вы книгу, которую хотите загрузить</label>
-					<input id="read" type="radio" name="read" value="yes">Да
-					<input id="read" type="radio" name="read" value="no">Нет
+					<span>Читали ли Вы книгу, которую хотите загрузить</span>
+					<input id="read-yes" type="radio" name="read" value="yes">
+					<label for="read-yes">Да</label>
+					<input id="read-no" type="radio" name="read" value="no">
+					<label for="read-no">Нет</label>
 				</div>
 				<!-- submit, reset, button -->
 				<button type="submit" value="add">Добавить</button>
