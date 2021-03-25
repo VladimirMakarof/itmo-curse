@@ -1,7 +1,144 @@
-a{
-	text-decoration: none;
-	color: #000;
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: #544837;
+	font-size: 16px;
+	line-height: 26px;
 }
-a:hover{
-	color: #808080;
+button{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	cursor: pointer;
+}
+li {
+    list-style-type: none;
+   }
+.title{
+	color: #2F281E;
+}
+.container{
+	max-width: 1124px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 78px;
+}
+.menu{
+	margin-left: auto;
+}
+.menu__list{
+	display: flex;
+}
+.menu__list-name{
+font-weight: 500;
+}
+.menu__list-item + .menu__list-item{
+	margin-left: 24px;
+}
+.logo__img{
+	width: 50px;
+	height: 50px;
+}
+.menu__list-link{
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 400;
+	color: #2F281E;
+	font-style: 14px;
+	line-height: 28px;
+}
+.user-nav{
+	margin-left: 52px;
+	margin-right: 13px;
+}
+.user-nav__link{
+	cursor: pointer;
+	text-decoration: none;
+	color: #173A56;
+	font-style: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	padding: 11px 23px;
+	border: 1px solid #BCD0E5;
+	border-radius: 4px;
+}
+.user-nav__link + .user-nav__link{
+	margin-left: 14px;
+	border-color: transparent;
+	background-color: #FF9900;
+	color: #fff;
+}
+.top__inner{
+	padding: 250px 0 80px;
+	background-image: url(../images/top-bg.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	height: 100%;
+	background-color: #e8f2ff;
+}
+.top__title{
+	font-weight: bold;
+	line-height: 54px;
+	font-size: 44px;
+	margin-bottom: 30px;
+	max-width: 518px;
+}
+.top__text{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 45px;
+	max-width: 460px;
+}
+.top__btn{
+	 display: inline-block;
+	 text-decoration: none;
+	 color: #fff;
+	 background-color: #ff9900;
+	 border-radius: 4px;
+	 padding: 15px 41px 14px;
+	 margin-right: 30px;
+	 border: none;
+}
+.main__inner-animals{
+	padding: 70px 0;
+	background-image: url(../images/animal.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	line-height: 4.5;
+}
+.main__inner-people{
+	padding: 70px 0;
+	background-image: url(../images/people.png);
+	background-repeat: no-repeat;
+	background-position: center left;
+	line-height: 4.5;
+	text-align: right;
+}
+.main__inner-people-animals{
+	padding: 70px 0;
+	background-image: url(../images/animal-people.png);
+	background-repeat: no-repeat;
+	background-position: center right;
+	line-height: 4.5;
+}
+.footer__inner{
+	display: flex;
+	text-align: right;
+	background-color: #e8f2ff;
+	justify-content: flex-end;
+}
+.footer__inner-add{
+	padding: 30px 10px 30px 10px;
+}
+.main__inner-title{
+	text-decoration: none;
+	color: #544837;
+	font-size: 44px;
 }
