@@ -4,41 +4,78 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/style.css">
 	<title>Регистрация</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-reg">
     <div class="container-form">
-      <h1>Регистрация</h1>
+      <h1 class="title__reg">Регистрация</h1>
   <form method="post" action="#">
-    <div>
+    <ul class="flex__form-reg-outer">
+    <li>
       <label for="name">Имя</label>
       <input id="name" type="text" name="name" autocomplete="on" autofocus required placeholder="Имя">
-    </div>
-    <div>
+    </li>
+    <li>
       <span>Пол</span>
         <input id="sex-m" type="radio" name="sex" value="мужской">
       <label for="sex-m">мужской</label>
         <input id="sex-w" type="radio" name="sex" value="женский">
       <label for="sex-w">женский</label>
         
-    </div>
-    <div>
+    </li>
+    <li>
       <label for="email">E-mail</label>
       <input id="email" type="email" name="email" autocomplete="on" required placeholder="E-mail">
-    </div>
-    <div>
+    </li>
+    <li>
       <label for="country">Страна</label>
       <select id="country" name="country">
         <option>Выберите страну проживания</option>
         <option value="Россия">Россия</option> 
         <option value="Украина">Украина</option> 
         <option value="Беларусь">Беларусь</option> 
-      </select> 
-      <div></div> 
-    </div> 
-    <button type="submit" name="submit">Отправить</button> 
+      </select>
+    </li>
+    <li>
+      <label for="message">Сообщение</label>
+      <textarea name="message" id="message" placeholder="Введите свое сообщение"></textarea>
+    </li>
+    <li>
+      <span>Возраст</span>
+      <ul class="flex__form-reg-inner">
+        <li>
+          <input type="checkbox" id="6to10">
+          <label name="6to10" for="6to10">6-10</label>
+        </li>
+        <li>
+          <input type="checkbox" id="11to16">
+          <label name="11to16" for="11to16">11-16</label>
+        </li>
+        <li>
+          <input type="checkbox" id="17to20">
+          <label name="17to20" for="17to20">16-20</label>
+        </li>
+        <li>
+          <input type="checkbox" id="21to26">
+          <label name="21to26" for="21to26">21-26</label>
+        </li>
+        <li>
+          <input type="checkbox" id="27to32">
+          <label name="27to32" for="27to32">27-32</label>
+        </li>
+        <li>
+          <input type="checkbox" id="32to60">
+          <label name="32to60" for="32to60">32-60</label>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button class="top__btn" type="submit" name="submit">Отправить</button>
+    </li> 
+    </ul> 
   </form> 
 
   <a href="../index.html">Главная страинца</a>

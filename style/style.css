@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
@@ -74,13 +77,16 @@ font-weight: 500;
 	background-color: #FF9900;
 	color: #fff;
 }
+.top{
+	background-color: #e8f2ff;
+}
 .top__inner{
 	padding: 250px 0 80px;
 	background-image: url(../images/top-bg.png);
 	background-repeat: no-repeat;
 	background-position: bottom right;
 	height: 100%;
-	background-color: #e8f2ff;
+	
 }
 .top__title{
 	font-weight: bold;
@@ -128,10 +134,12 @@ font-weight: 500;
 	background-position: center right;
 	line-height: 4.5;
 }
+.footer{
+	background-color: #e8f2ff;
+}
 .footer__inner{
 	display: flex;
 	text-align: right;
-	background-color: #e8f2ff;
 	justify-content: flex-end;
 }
 .footer__inner-add{
@@ -141,4 +149,20 @@ font-weight: 500;
 	text-decoration: none;
 	color: #544837;
 	font-size: 44px;
+}
+/* форма регистрации --------------- reg.html*/
+.container-reg{
+	background-color: #e8f2ff;
+
+}
+.container-form{
+	width: 80%;
+  	max-width: 1200px;
+  	margin: 0 auto;
+  	
+}
+.flex__form-reg-outer li,
+.flex__form-reg-inner{
+	display: flex;
+	flex-wrap: wrap;
 }

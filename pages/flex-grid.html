@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="../style/flex-grid.css">
+		<style>
+			.elem {
+				margin: 1rem;
+				
+				border: 1px solid red;
+			}
+			.first-div{
+				height: 100px;
+			}
+			.second-div{
+				height: 50px;
+			}
+			img{
+				height: 100%;
+				width: 100%;
+			}
+			.elem h3{
+				background-color: #edc7b7;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				margin: 0;
+				text-align: center;
+			}
+			.flex-1{
+				flex:1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.elem-menu{
+				box-shadow: 0 5px 5px black;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="flex-row">
+			<a class="elem-menu flex-1 second-div" href="#">Link-1-in-line</a>
+			<a class="elem-menu flex-1 second-div" href="#">Link-2</a>
+			<a class="elem-menu flex-1 second-div" href="#">Link-3</a>
+			<a class="elem-menu flex-1 second-div" href="#">Link-4</a>
+			<a class="elem-menu flex-1 second-div" href="#">Link-5</a>
+		</header>
+		<div class="flex-row" >
+			<aside class="flex-column col-2">
+				<a class="elem-menu flex-1" href="#">Link-1</a>
+				<a class="elem-menu flex-1" href="#">Link-2</a>
+				<a class="elem-menu flex-1" href="#">Link-3</a>
+				<a class="elem-menu flex-1" href="#">Link-4</a>
+				<a class="elem-menu flex-1" href="#">Link-5</a>
+			</aside>
+			
+			<main class="col-10">
+				<div class="flex-row">
+					<div class="offset-2 col-8">
+						<div class="elem first-div"><img src="https://picsum.photos/id/1/400/400" alt=""></div>
+					</div>
+				</div>
+				<div class="flex-row">
+					<div class="col-3">
+						<div class="elem">
+							<h3>Название</h3>
+							<img src="https://picsum.photos/id/1/400/400" alt="">
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="elem">
+							<h3>Название</h3>
+							<img src="https://picsum.photos/id/1/400/400" alt="">
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="elem">
+							<h3>Название</h3>
+							<img src="https://picsum.photos/id/1/400/400" alt="">
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="elem">
+							<h3>Название</h3>
+							<img src="https://picsum.photos/id/1/400/400" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="flex-row">
+					<div class="col-6 flew-row ">
+						<div class="elem flex-row">
+							<div class="col-6 flex-column">
+								<div>
+									<img src="https://picsum.photos/400/400?random=1">
+								</div>
+							</div>
+							<div class="col-6">
+								<p>123Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+									laboriosam doloribus dolor, omnis, nesciunt sint iure dignissimos repellat
+									et corrupti, cumque ea! Excepturi facere ducimus ea quo in maiores. Aliquid
+									numquam odio et eveniet facere eaque voluptates doloribus cupiditate magni
+								beatae, voluptatum qui adipisci, sequi veritatis eligendi modi molestiae illo?</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="elem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nulla modi nemo quae, molestiae officia dolore in totam, ad sapiente.</div>
+					</div>
+					<div class="col-3">
+						<div class="elem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora illo reprehenderit quae molestias dolorem amet delectus numquam perspiciatis reiciendis, labore!</div>
+					</div>
+				</div>
+				<div class="flex-row">
+					<div class="col-3">
+						<div class="elem">9999999Lorem ipsum dolor sit amet consectetur adipisicing, elit. Accusamus maiores sint nesciunt at magni deserunt laudantium illo saepe impedit tempore.</div>
+					</div>
+					<div class="col-3">
+						<div class="elem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam deserunt harum veritatis laborum, sint omnis dolor distinctio earum quae cumque.</div>
+					</div>
+					<div class="col-6">
+						<div class="elem flex-row">
+							<div class="col-6 flex-column">
+								<div>
+									<img src="https://picsum.photos/400/400?random=1">
+								</div>
+							</div>
+							<div class="col-6">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+									laboriosam doloribus dolor, omnis, nesciunt sint iure dignissimos repellat
+									et corrupti, cumque ea! Excepturi facere ducimus ea quo in maiores. Aliquid
+									numquam odio et eveniet facere eaque voluptates doloribus cupiditate magni
+								beatae, voluptatum qui adipisci, sequi veritatis eligendi modi molestiae illo?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex-row">
+					<div class="col-6">
+						<div class="elem flex-row">
+							<div class="col-6 flex-column">
+								<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labortetur adipisicing elit. Labore, qutetur adipisicing elit. Labore, que, quae22222?</div>
+								<img src="https://picsum.photos/id/1/400/400" alt="">
+							</div>
+							<div class="col-6">
+								<img src="https://picsum.photos/id/1/400/400" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 flex-column">
+						<div class="elem">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Eius, quibusdam, assumenda? Ratione recusandae quas quam reiciendis maiores voluptatem facilis tempore!45655</div>
+						<div class="elem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto ad minus velit odit! Minima deleniti ex magni libero inventore.</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer class=" elem">
+			footer
+		</footer>
+	</body>
+</html>
