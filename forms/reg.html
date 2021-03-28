@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../style/reset.css">
-  <link rel="stylesheet" href="../style/style.css">
-	<title>Регистрация</title>
-</head>
-<body>
-  <div class="container-reg">
-    <div class="container-form">
-      <h1 class="title__reg">Регистрация</h1>
-  <form method="post" action="#">
-    <ul class="flex__form-reg-outer">
-    <li>
-      <label for="name">Имя</label>
-      <input id="name" type="text" name="name" autocomplete="on" autofocus required placeholder="Имя">
-    </li>
-    <li>
-      <span>Пол</span>
-        <input id="sex-m" type="radio" name="sex" value="мужской">
-      <label for="sex-m">мужской</label>
-        <input id="sex-w" type="radio" name="sex" value="женский">
-      <label for="sex-w">женский</label>
-        
-    </li>
-    <li>
-      <label for="email">E-mail</label>
-      <input id="email" type="email" name="email" autocomplete="on" required placeholder="E-mail">
-    </li>
-    <li>
-      <label for="country">Страна</label>
-      <select id="country" name="country">
-        <option>Выберите страну проживания</option>
-        <option value="Россия">Россия</option> 
-        <option value="Украина">Украина</option> 
-        <option value="Беларусь">Беларусь</option> 
-      </select>
-    </li>
-    <li>
-      <label for="message">Сообщение</label>
-      <textarea name="message" id="message" placeholder="Введите свое сообщение"></textarea>
-    </li>
-    <li>
-      <span>Возраст</span>
-      <ul class="flex__form-reg-inner">
-        <li>
-          <input type="checkbox" id="6to10">
-          <label name="6to10" for="6to10">6-10</label>
-        </li>
-        <li>
-          <input type="checkbox" id="11to16">
-          <label name="11to16" for="11to16">11-16</label>
-        </li>
-        <li>
-          <input type="checkbox" id="17to20">
-          <label name="17to20" for="17to20">16-20</label>
-        </li>
-        <li>
-          <input type="checkbox" id="21to26">
-          <label name="21to26" for="21to26">21-26</label>
-        </li>
-        <li>
-          <input type="checkbox" id="27to32">
-          <label name="27to32" for="27to32">27-32</label>
-        </li>
-        <li>
-          <input type="checkbox" id="32to60">
-          <label name="32to60" for="32to60">32-60</label>
-        </li>
-      </ul>
-    </li>
-    <li>
-      <button class="top__btn" type="submit" name="submit">Отправить</button>
-    </li> 
-    </ul> 
-  </form> 
-
-  <a href="../index.html">Главная страинца</a>
-    </div>
-    
-  </div>
-  
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/flex-grid.css">
+    <title>Регистрация</title>
+  </head>
+  <body class="form">
+    <section class="form-section flex-row">
+      <form class="col-5" method="post" action="#">
+        <fieldset>
+          <legend>Регистрация</legend>
+          <div class="flex-row">
+            <label class="col-6" for="name">Имя</label>
+            <input class="col-6" id="name" type="text" name="name" autocomplete="on" autofocus required placeholder="Имя">
+          </div>
+          <div class="flex-row">
+            <span class="col-6">Пол</span>
+            <input id="sex-m" type="radio" name="sex" value="мужской">
+            <label for="sex-m">мужской</label>
+            <input id="sex-w" type="radio" name="sex" value="женский">
+            <label for="sex-w">женский</label>
+            
+          </div>
+          <div class="flex-row">
+            <label class="col-6" for="email">E-mail</label>
+            <input class="col-6" id="email" type="email" name="email" autocomplete="on" required placeholder="E-mail">
+          </div>
+          <div class="flex-row">
+            <label class="col-6" for="country">Страна</label>
+            <select class="col-6" id="country" name="country">
+              <option>Выберите страну проживания</option>
+              <option value="Россия">Россия</option>
+              <option value="Украина">Украина</option>
+              <option value="Беларусь">Беларусь</option>
+            </select>
+          </div>
+          <div class="flex-row">
+            <label class="col-6" for="message">Сообщение</label>
+            <textarea class="col-6" name="message" id="message" placeholder="Введите свое сообщение"></textarea>
+          </div>
+          <div class="flex-row">
+            <span class="col-6">Возраст</span>
+            <ul>
+            <div>
+              <input type="checkbox" id="6to10">
+              <label name="6to10" for="6to10">6-10</label>
+            </div>
+            <div>
+              <input type="checkbox" id="11to16">
+              <label name="11to16" for="11to16">11-16</label>
+            </div>
+            <div>
+              <input type="checkbox" id="17to20">
+              <label name="17to20" for="17to20">16-20</label>
+            </div>
+            <div>
+              <input type="checkbox" id="21to26">
+              <label name="21to26" for="21to26">21-26</label>
+            </div>
+            <div>
+              <input type="checkbox" id="27to32">
+              <label name="27to32" for="27to32">27-32</label>
+            </div>
+            <div>
+              <input type="checkbox" id="32to60">
+              <label name="32to60" for="32to60">32-60</label>
+            </div>
+            </ul>
+          </div>
+          <div>
+            <div class="flex-row top__btn">
+              <div class=" col-3"></div>
+              <button class="top__btn col-6" type="submit" name="submit">Отправить</button>
+              <div class=" col-3"></div>
+            </div>
+            
+          </div>
+          <a href="../index.html">Главная страинца</a>
+          
+        </fieldset>
+      </form>
+    </section>
+  </body>
 </html>

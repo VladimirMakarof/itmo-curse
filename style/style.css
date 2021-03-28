@@ -7,6 +7,7 @@ body{
 	color: #544837;
 	font-size: 16px;
 	line-height: 26px;
+	margin: 0;
 }
 button{
 	font-family: 'Roboto', sans-serif;
@@ -141,6 +142,7 @@ font-weight: 500;
 	display: flex;
 	text-align: right;
 	justify-content: flex-end;
+	background-color: #e8f2ff;
 }
 .footer__inner-add{
 	padding: 30px 10px 30px 10px;
@@ -151,18 +153,136 @@ font-weight: 500;
 	font-size: 44px;
 }
 /* форма регистрации --------------- reg.html*/
-.container-reg{
-	background-color: #e8f2ff;
+.form-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.form{
+	background-color: #BCD0E5;
+}
 
+/*===========*/
+.body-book {
 }
-.container-form{
-	width: 80%;
-  	max-width: 1200px;
-  	margin: 0 auto;
-  	
+
+.img-book {
+    width: 100%;
+    height: 100%;
 }
-.flex__form-reg-outer li,
-.flex__form-reg-inner{
-	display: flex;
-	flex-wrap: wrap;
+
+.image-book{
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+
+.title-book {
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.specifications-book,
+.reviews-book {
+    padding-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reviews-book span {
+    display: block;
+}
+
+.reviews-book div {
+    padding: 0.7rem;
+}
+
+.reviews-book div:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.reviews-book div:nth-child(even) {
+    background-color: lightslategray;
+}
+
+.reviews-book h3,
+.specifications-book h3 {
+    text-transform: uppercase;
+}
+
+.slider-book {
+    box-shadow: inset 0 4px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 1rem;
+    background: url("../img/flowers.jpg");
+}
+
+.header-book,
+.footer-book {
+    /*background: #FF4E00;*/
+}
+
+.main-book {
+    background-color: #fefefe;
+}
+
+.right-aside-book,
+.left-aside-book {
+    background-color: #fefefe;
+}
+
+/* grid layout*/
+.body-book{
+    display: grid;
+    grid-template-areas: 
+        "header header header" /*первый ряд*/
+        "left main right"      /*второй ряд*/
+        "slider slider slider"  /*третий ряд*/
+        "footer footer footer";  /*четвертый ряд*/
+    grid-template-columns: 1fr minmax(500px, 1200px) 1fr;
+    grid-template-rows: 80px auto 40vh 100px;
+}
+.header-book{
+    grid-area: header;
+}
+.left-aside-book{
+    grid-area: left;
+}
+.right-aside-book{
+    grid-area: right;
+}
+.main-book{
+    grid-area: main;
+}
+.slider-book{
+    grid-area: slider;
+}
+.footer-book{
+    grid-area: footer;
+}
+.main-book{
+    display: grid;
+    grid-template:
+        "image text" /*можем задать высоту первого ряда*/
+        "specifications reviews" /*можем задать высоту 2 ряда*/
+        ". reviews" /*можем задать высоту 3 ряда*/
+        ". reviews" /*можем задать высоту 4 ряда*/
+        "similar similar" 200px /*можем задать высоту 5 ряда*/
+        / 1fr 2fr;
+}
+.title-book{
+    grid-area: text;
+}
+.img-book{
+    grid-area: image;
+}
+.specifications-book{
+    grid-area: specifications;
+}
+.reviews-book{
+    grid-area: reviews;
+}
+.similar-book{
+    grid-area: similar;
+    display: flex;
 }
