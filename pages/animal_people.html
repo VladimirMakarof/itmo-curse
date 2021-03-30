@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Книги о людях с животными</title>
-	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="../style/style.css">
-</head>
-<body>
-	<ul>
-		<li class=""> <a href="../index.html">Книги</a>  
-			<ul class="">
-				<li class=""><a href="animal_books.html">Книги о животных</a></li>
-				<li class=""><a href="people_books.html">Книги о людях</a></li>
-				<li class=""><a href="animal_people.html">Книги о людях с животными</a></li>
-			</ul>			
-		</li>
-
-		<br><hr><br>
-		<h1 class="">Книги о людях с животными</h1>
-
-			<ul class="">
-				<li class=""><a href="../pages/Martel.html">&#171;Жизнь Пи&#187;, Янн Мартел</a></li></li>
-				<li class=""><a href="../pages/Kipling.html">&#171;Маугли&#187;, Редьярд Киплинг</a></li></li>
-				<li class=""><a href="../pages/Burnett.html">&#171;Таинственный сад&#187;, Фрэнсис Элиза Бёрнетт</a></li>
-			</ul>
-	</ul>
-</body>
-</html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Книги о людях с животными</title>
+		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../style/style.css">
+		<link rel="stylesheet" href="../style/flex-grid.css">
+	</head>
+	<body class="form">
+		<header class="header-animals">
+			<div class="container">
+				<div class="header__inner">
+					<a class="logo" href="../index.html">
+						<img class="logo__img" src="../images/logo.png" alt="logo-images">
+					</a>
+					<nav class="menu">
+						<ul class="menu__list">
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="animal_books.html">O животных</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="people_books.html">O людях</a>
+							</li>
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="animal_people.html">O людях с животными</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+				<section class="flex-row content-animals" >
+					<div class="col-6">
+						<div class="container-animals-text">
+							<h1 class="main__inner-title">Книги о людях <br> с животными</h1>
+							<div class="">
+								<ul class="">
+									<li class="">
+										<a class="menu__list-link" href="Martel.html"><span class="menu__list-name"><<Жизнь Пи.>></span> Янн Мартел</a>
+									</li>
+									<li class="">
+										<a class="menu__list-link" href="Kipling.html"><span class="menu__list-name"><<Маугли.>> </span>Редьярд Киплинг</a>
+									</li>
+									<li class="">
+										<a class="menu__list-link" href="Burnett.html"><span class="menu__list-name"><<Таинственный сад>> </span>Фрэнсис Элиза Бёрнетт</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 animal-img">
+						<img src="../images/animal-people.png" alt="Люди с животными">
+					</div>
+				</section>
+				<section class="footer-animals">
+					<div class="container">
+						<div class="footer__inner">
+							<form class="footer__inner-add" action="../pages/flex-grid.html">
+								<button class="top__btn">Flex-grid</button>
+							</form>
+							<form class="footer__inner-add" action="../pages/add_book.html">
+								<button class="top__btn">Добавить книгу.</button>
+							</form>
+							<form class="footer__inner-add" action="../forms/review.html">
+								<button class="top__btn">Оставить отзыв на книгу.</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</body>
+		</html>

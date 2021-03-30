@@ -5,31 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/flex-grid.css">
 	<title>Форма входа</title>
 </head>
-<body>
+<body class="form">
+	<section class="form-section flex-row">
 	<!-- action обрабаыватеся на серверной части, metod это способ передачи на сервер -->
-	<form action="#" method="post">
+	<form class="col-4" action="#" method="post">
 		<fieldset > <!-- disabled отключается возможность ввода в форме -->
 			<legend>Данные авторизации</legend>
-		<div>
+			<h1>Войти</h1>
+		<div class="flex-row mb">
 			<!-- строчный, одиночный тэг -->
-			<label for="email">Введите email</label>
-			<input autofocus id="email" type="email" placeholder="Введите email" name="email" autocomplete="on">
+			<label class="col-6 mb" for="email">Введите email</label>
+			<input class="col-6 mb" autofocus id="email" type="email" placeholder="Введите email" name="email" autocomplete="on">
+		</div>
+		<div class="flex-row mb">
+			<label class="col-6 mb" for="password">Введите пароль</label>			
+			<input class="col-6 mb" id="password" type="password" placeholder="Введите пароль" name="password">
+		</div>
+		
+		<div class="flex-row mb">
+			<!-- привязка текст к элементу формы/ checked устанавилвает галочку -->
+			<label class="col-6 mb" for="remember">Запомнить: </label>
+			<input class=" mb" id="remember" checked type="checkbox" name="remember" value="true"> 
+		</div>
+		<div >
+			<input class=" top__btn-2" type="submit" value="Войти">
+			<input class=" top__btn-2" type="reset" value="Сбросить">
 		</div>
 		<div>
-			<label for="password">Введите пароль</label>			
-			<input id="password" type="password" placeholder="Введите пароль" name="password">
+			<a href="../index.html">Главная страинца</a>
 		</div>
 		</fieldset>
-		<div>
-			<!-- привязка текст к элементу формы/ checked устанавилвает галочку -->
-			<label for="remember">Запомнить: </label>
-				<input id="remember" checked type="checkbox" name="remember" value="true"> 
-		</div>
-		<input type="submit" value="Войти"> <!-- reset/button -->
-		<input type="reset" value="Сбросить">
 	</form>
-	<div><a href="../index.html">Главная страинца</a></div>
+	</section>
 </body>
 </html>

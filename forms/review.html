@@ -5,55 +5,63 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="../style/style.css">
+		<link rel="stylesheet" href="../style/flex-grid.css">
 		<title>Оставить отзыв на книгу</title>
-		<body>
-			<h1>Оставить отзыв на книгу</h1>
+		<body class="form">
+			<section class="form-section flex-row">
 			<form action="#" method="post" id="form-review">
-				<fieldset name="form">
+				<fieldset>
 					<legend>Оставить отзыв на книгу</legend>
 					<div>
-						<div>
-							<label for="author-book">Автор</label>
-							<input id="author-book" type="text" name="author-book" placeholder="Автор книги" autofocus />
+						<h1>Оставить отзыв на книгу</h1>
+						<div class="flex-row">
+							
+							<label class="col-6 mb" for="author-book">Автор</label>
+							<input class="col-6 mb" id="author-book" type="text" name="author-book" placeholder="Автор книги" autofocus />
 						</div>
-						<div>
-							<label for="name-book">Название книги</label>
-							<input id="name-book" type="text" name="name-book" placeholder="Название книги" />
+						<div class="flex-row">
+							<label class="col-6 mb" for="name-book">Название книги</label>
+							<input class="col-6 mb" id="name-book" type="text" name="name-book" placeholder="Название книги" />
 						</div>
-						<div>
-							<label for="type-book-form">Жанр</label>
-							<input id="type-book-form" type="text" name="type-book-form" placeholder="Жанр">
+						<div class="flex-row">
+							<label class="col-6 mb" for="type-book-form">Жанр</label>
+							<input class="col-6 mb" id="type-book-form" type="text" name="type-book-form" placeholder="Жанр">
 						</div>
-						<div>
-							<label for="type-book-list">Выберите жанр книги</label>
+						<div class="flex-row">
+							<label class="col-6 mb" for="type-book-list">Выберите жанр книги</label>
 							<select id="type-book-list" name="type-book-list">
 							<option value="Художественная">Художественная</option>
 							<option value="Фантастика">Фантастика</option>
 							<option value="Сказки">Сказки</option>
-						</select>
+							</select>
 
 						</div>
-						<div>
-							<label for="date">Когда прочитали.</label>
-							<input id="date" type="date" name="date" />
+						<div class="flex-row">
+							<label class="col-6 mb" for="date">Когда прочитали.</label>
+							<input class="col-6 mb" id="date" type="date" name="date" />
+						</div>
+						<div class="flex-row">
+							<label class="col-6 mb" for="time">Как долго читали.</label>
+							<input class="col-6 mb" id="time" type="time" name="time" />
+						</div>
+						<div class="flex-row">
+							<label class="col-6 mb" for="range">Насколько Вам понравилось.</label>
+							<input class="col-6 mb" id="range" type="range" name="range"/>
 						</div>
 						<div>
-							<label for="time">Как долго читали.</label>
-							<input id="time" type="time" name="time" />
-						</div>
-						<div>
-							<label for="range">Насколько Вам понравилось.</label>
-							<input id="range" type="range" name="range"/>
-						</div>
-						<div>
-							<label for="text-review">Напишите Ваш отзыв.</label>
-							<textarea id="text-review" name="text-review" placeholder="Напишите отзыв на книгу ... "></textarea>
+							<label class="col-6 mb" for="text-review">Напишите Ваш отзыв.</label>
+							<textarea class="col-6 mb" id="text-review" name="text-review" placeholder="Напишите отзыв на книгу ... "></textarea>
 						</div>
 					</div>
-				</fieldset>
+				<div class="flex-row">
+					<input class="col-6 top__btn-1" form="form-review" type="submit" name="submit" value="Отправить отзыв" />
+					<input class="col-6 top__btn-1" form="form-review" type="reset" name="reset" value="Очистить форму" />
+				</div>
+				<div>
+					<a href="../index.html">Главная страинца</a>
+				</div>
+			</fieldset>
 			</form>
-			<input form="form-review" type="submit" name="submit" value="Отправить отзыв" />
-			<input form="form-review" type="reset" name="reset" value="Очистить форму" />
-			<div><a href="../index.html">Главная страинца</a></div>
+		</section>
 		</body>
 	</html>
