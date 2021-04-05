@@ -6,29 +6,43 @@
 	<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../style/style.css">
 	<link rel="stylesheet" href="../style/flex-grid.css">
+	<link rel="stylesheet" href="../fonts/fontawesome/all.min.css">
 	<title>Форма входа</title>
 </head>
 <body class="form">
 	<section class="form-section flex-row">
 	<!-- action обрабаыватеся на серверной части, metod это способ передачи на сервер -->
-	<form class="col-4" action="#" method="post">
+	<form class="col-4 authorization" action="#" method="post">
 		<fieldset > <!-- disabled отключается возможность ввода в форме -->
 			<legend>Данные авторизации</legend>
+			
 			<h1>Войти</h1>
-		<div class="flex-row mb">
+			<div class="container-form">
+		<div class=" mb">
 			<!-- строчный, одиночный тэг -->
-			<label class="col-6 mb" for="email">Введите email</label>
-			<input class="col-6 mb" autofocus id="email" type="email" placeholder="Введите email" name="email" autocomplete="on">
+			
+			<!-- <label class="" for="email"> -->
+				
+			<!-- </label> -->
+			<input class="= mb "  id="email" type="email" placeholder="Введите email" name="email" autocomplete="on">
+			<span class="fa fa-envelope mb email"></span>
 		</div>
-		<div class="flex-row mb">
-			<label class="col-6 mb" for="password">Введите пароль</label>			
-			<input class="col-6 mb" id="password" type="password" placeholder="Введите пароль" name="password">
+		<div class=" mb">
+			
+			<!-- <label class="col-6  password" for="password"> -->
+				<input class=" mb " id="password" type="password" placeholder="Введите пароль" name="password">
+				<span class="fa fa-key password"></span>
+			<!-- </label> -->			
+			
 		</div>
 		
-		<div class="flex-row mb">
+		<div class="mb">
 			<!-- привязка текст к элементу формы/ checked устанавилвает галочку -->
-			<label class="col-6 mb" for="remember">Запомнить: </label>
+			<label class=" mb" for="remember">Запомнить: </label>
 			<input class=" mb" id="remember" checked type="checkbox" name="remember" value="true"> 
+			</div>
+			
+			
 		</div>
 		<div >
 			<input class=" top__btn-2" type="submit" value="Войти">
@@ -37,6 +51,7 @@
 		<div>
 			<a href="../index.html">Главная страинца</a>
 		</div>
+
 		</fieldset>
 	</form>
 	</section>

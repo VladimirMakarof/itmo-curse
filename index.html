@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style/reset.css">
 		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/flex-grid.css">
 	</head>
 	<body>
 		<header class="header">
@@ -19,6 +19,9 @@
 						<img class="logo__img" src="images/logo.png" alt="logo-images">
 					</a>
 					<nav class="menu">
+						<div class="menu__btn">
+							<span></span>
+						</div>
 						<ul class="menu__list">
 							<li class="menu__list-item">
 								<a class="menu__list-link" href="pages/animal_books.html">O животных</a>
@@ -32,9 +35,9 @@
 						</ul>
 					</nav>
 					<div class="user-nav">
-						<a class="user-nav__link" href="forms/reg.html">Регистрация</a>
-						<a class="user-nav__link" href="forms/by_mail.html">По электронной почте</a>
-						<a class="user-nav__link" href="forms/login.html">По логину</a>
+						<a class="user-nav__link reg" href="forms/reg.html">Регистрация</a>
+						<a class="user-nav__link by_mail-1" href="forms/by_mail.html">По электронной почте</a>
+						<a class="user-nav__link login" href="forms/login.html">По логину</a>
 					</div>
 				</header>
 				<section class="top">
@@ -51,7 +54,7 @@
 				</section>
 				<section class="main">
 					<div class="container">
-						<div class="main__inner">
+						<div class="main__inner ">
 							<div class="main__inner-animals">
 								<a class="main__inner-title" href="#">Книги о животных</a>
 								<ul class="">
@@ -111,5 +114,8 @@
 							</div>
 						</div>
 					</section>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="js/main.js"></script>
+					
 			</body>
 		</html>

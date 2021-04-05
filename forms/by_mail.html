@@ -6,19 +6,22 @@
 		<link rel="icon" href="../images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="../style/style.css">
 		<link rel="stylesheet" href="../style/by_mail.css">
+		<link rel="stylesheet" href="../style/flex-grid.css">
+		<link rel="stylesheet" href="../fonts/fontawesome/all.min.css">
 		<title>Авторизация по электронной почте</title>
 	</head>
 	<body class="by_mail">
 		<section class="form-section flex-row">
-			<form action="#" method="post">
+			<form action="#" method="post" class="authorization">
 				<fieldset>
 					<legend>Авторизация по электронной почте</legend>
 					<h1>Войти используя электронную почту</h1>
-					<div class="flex-row">
-						<label class="col-6"  for="mail">Впишите свою электронную почту</label>
-						<input class="col-6" id="mail" autofocus type="text" list="mail" name="mail" placeholder="Email" autocomplete="on">
-					</div class="flex-row">
-					<div class="flex-row">
+					<div class="flex-row mb">
+						<label class="col-6"  for="mail">Укажите электронную почту</label>
+						<input class="col-6 " id="email"  type="email" list="email" name="email" placeholder="Email" autocomplete="on">
+						<span class="fa fa-envelope mb email-by-email"></span>
+					</div>
+					<div class="flex-row mb">
 						<label class="col-6" for="mail-form">Выбирите свою почту</label>
 						<select class="col-6" id="mail-form" name="mail-form">
 							<option value="mail">Mail</option>
@@ -26,7 +29,7 @@
 							<option value="gmail">Gmail</option>
 						</select>
 					</div>
-					<div class="flex-row">
+					<div class="flex-row mb">
 						<input class="col-6 top__btn-1" type="submit" value="Войти"/>
 						<input class="col-6 top__btn-1" type="reset" value="Очистить"/>
 					</div>
