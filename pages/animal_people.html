@@ -9,63 +9,73 @@
 		<link rel="stylesheet" href="../style/flex-grid.css">
 	</head>
 	<body class="form">
-		<header class="header-animals">
-			<div class="container">
-				<div class="header__inner">
-					<a class="logo" href="../index.html">
-						<img class="logo__img" src="../images/logo.png" alt="logo-images">
-					</a>
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="animal_books.html">O животных</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="people_books.html">O людях</a>
-							</li>
-							<li class="menu__list-item">
-								<a class="menu__list-link" href="animal_people.html">O людях с животными</a>
-							</li>
-						</ul>
-					</nav>
-				</header>
+		<header class="header header-book">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="../index.html">
+                        <img class="logo__img" src="../images/logo.png" alt="logo-images">
+                    </a>
+                    <nav class="menu">
+                        <div class="menu__btn">
+                            <span></span>
+                        </div>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="../pages/animal_books.html">O животных</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="../pages/people_books.html">O людях</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="../pages/animal_people.html">O людях с животными</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="user-nav">
+                        <a class="user-nav__link reg" href="../forms/reg.html">Регистрация</a>
+                        <a class="user-nav__link by_mail-1" href="../forms/by_mail.html">По электронной почте</a>
+                        <a class="user-nav__link login" href="../forms/login.html">По логину</a>
+                    </div>
+                </div>
+                </div>
+        </header>
 				<section class="flex-row content-animals" >
-					<div class="col-6">
+					<div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12">
 						<div class="container-animals-text">
 							<h1 class="main__inner-title">Книги о людях <br> с животными</h1>
 							<div class="">
 								<ul class="">
 									<li class="">
-										<a class="menu__list-link" href="Martel.html"><span class="menu__list-name"><<Жизнь Пи.>></span> Янн Мартел</a>
+										<a class="menu__list-link" href="Martel.html"><span class="menu__list-name">&#171;Жизнь Пи.&#187;</span> Янн Мартел</a>
 									</li>
 									<li class="">
-										<a class="menu__list-link" href="Kipling.html"><span class="menu__list-name"><<Маугли.>> </span>Редьярд Киплинг</a>
+										<a class="menu__list-link" href="Kipling.html"><span class="menu__list-name">&#171;Маугли.&#187; </span>Редьярд Киплинг</a>
 									</li>
 									<li class="">
-										<a class="menu__list-link" href="Burnett.html"><span class="menu__list-name"><<Таинственный сад>> </span>Фрэнсис Элиза Бёрнетт</a>
+										<a class="menu__list-link" href="Burnett.html"><span class="menu__list-name">&#171;Таинственный сад&#187; </span>Фрэнсис Элиза Бёрнетт</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="col-6 animal-img">
+					<div class="col-6 animal-img hide">
 						<img src="../images/animal-people.png" alt="Люди с животными">
 					</div>
 				</section>
-				<section class="footer-animals">
+				<div class="footer-animals">
 					<div class="container">
-						<div class="footer__inner">
-							<form class="footer__inner-add" action="../pages/flex-grid.html">
-								<button class="top__btn">Flex-grid</button>
-							</form>
-							<form class="footer__inner-add" action="../pages/add_book.html">
-								<button class="top__btn">Добавить книгу.</button>
-							</form>
-							<form class="footer__inner-add" action="../forms/review.html">
-								<button class="top__btn">Оставить отзыв на книгу.</button>
-							</form>
-						</div>
-					</div>
-				</section>
+							<div class="footer__inner">
+            <div class="footer__inner-add">
+                <a class="top__btn" href="../pages/flex-grid.html">Flex-grid</a>
+            </div>
+            <div class="footer__inner-add">
+                <a class="top__btn" href="../pages/add_book.html" >Добавить книгу.</a>
+            </div>
+            <div class="footer__inner-add">
+                <a class="top__btn hide" href="../forms/review.html" >Оставить отзыв на книгу.</a>
+            </div>
+        </div>
+				</div>
+				</div>
 			</body>
 		</html>

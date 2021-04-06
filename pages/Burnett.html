@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
 	</header>
 	<aside class="left-aside-book"></aside>
 <main class="main-book">
-    <section class="title-book">
+    <section class="title-book" id="start">
         <h1 class="">&#171;Таинственный сад.&#187; Фрэнсис Элиза Бёрнетт</h1>
  </h2>
 	<p class="">Фрэ́нсис Эли́за Хо́джсон Бёрнетт (англ. Frances Eliza Hodgson Burnett; 24 ноября 1849, Манчестер, Англия — 29 октября 1924, Нью-Йорк, США) — английская писательница и драматург.
@@ -57,9 +57,9 @@
 Для среднего и старшего школьного возраста.</p>
 
     </section>
-    <section class="image-book">
-        <img class="img-book" src="../images/Frances Eliza Burnett.jpg">
-    </section>
+    <div class="image-book">
+        <img class="img-book" src="../images/Frances_Eliza_Burnett.jpg">
+    </div>
     <section class="specifications-book">
         <h3>О книге</h3>
         <table>
@@ -78,7 +78,7 @@
         </table>
     </section>
 
-    <section class="reviews-book" id="review">
+    <section class="reviews-book">
         <h3 >Отзывы</h3>
         <div>
             <span>12.02.20 | 13:44</span>
@@ -107,28 +107,25 @@ P.S."Маленькая принцесса" мне понравилась чут
         </div>
     </section>
     <section class="similar-book">
-        <a href="Pennac.html"><img class="img-book" src="../images/Daniel Pennac.jpg"></a>
-        <a href="Mowat.html"><img class="img-book" src="../images/Farley McGill Mowat.jpg"></a>
-        <a href="Cabre.html"><img class="img-book" src="../images/Jaume Cabre.jpg"></a>
-        <a href="Mowat.html"><img class="img-book" src="../images/Farley McGill Mowat.jpg"></a>
+        <a href="Pennac.html"><img class="img-book" src="../images/Daniel_Pennac.jpg"></a>
+        <a href="Mowat.html"><img class="img-book" src="../images/Farley_McGill_Mowat.jpg"></a>
+        <a href="Cabre.html"><img class="img-book" src="../images/Jaume_Cabre.jpg"></a>
+        <a href="Mowat.html"><img class="img-book" src="../images/Farley_McGill_Mowat.jpg"></a>
     </section>
 </main>
 <aside class="right-aside-book"></aside>
-<section class="slider-book">SLIDER</section>
 <footer class="footer footer-book">
-	<!-- <div class="container"> -->
-		<div class="footer__inner">
-			<form class="footer__inner-add" href="#start">
-				<button class="top__btn">Вверх.</button>
-			</form>
-			<form class="footer__inner-add" action="../pages/add_book.html">
-				<button class="top__btn">Добавить книгу.</button>
-			</form>
-			<form class="footer__inner-add" action="../forms/review.html">
-			<button class="top__btn">Оставить отзыв на книгу.</button>
-			</form>
-		</div>
-	<!-- </div> -->
+	<div class="footer__inner">
+            <div class="footer__inner-add" >
+                <a class="top__btn" href="#start">Вверх.</a>
+            </div>
+            <div class="footer__inner-add">
+                <a href="../pages/add_book.html" class="top__btn">Добавить книгу.</a>
+            </div>
+            <div class="footer__inner-add">
+                <a href="../forms/review.html" class="top__btn hide">Оставить отзыв на книгу.</a>
+            </div>
+        </div>
 </footer>
 </body>
 </html>

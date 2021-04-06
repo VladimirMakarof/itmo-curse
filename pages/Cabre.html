@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@
 			</header>
 		<aside class="left-aside-book"></aside>
 		<main class="main-book">
-			<section class="title-book">
+			<section class="title-book" id="start">
 				<h1 class="">&#171;Я исповедуюсь.&#187; Жауме Кабре</h1>
 				</h2>
 				<p class="">Жауме Кабре – современный каталонский филолог, автор сценариев и писатель, специализирующийся на жанре романа.
@@ -46,9 +46,9 @@
 			<p class="">Впервые на русском языке роман выдающегося каталонского писателя Жауме Кабре "Я исповедуюсь". Книга переведена на двенадцать языков, а ее суммарный тираж приближается к полумиллиону экземпляров.
 			Герой романа Адриа Ардевол, музыкант, знаток искусства, полиглот, пересматривает свою жизнь, прежде чем незримая метла одно за другим сметет из его памяти все события. Он вспоминает детство и любовную заботу няни Лолы, холодную и прагматичную мать, эрудита-отца с его загадочной судьбой. Наиболее ценным сокровищем принадлежавшего отцу антикварного магазина была старинная скрипка Сториони, на которой лежала тень давнего преступления. Однако оказывается, что история жизни Адриа несводима к нескольким десятилетиям, все началось много веков назад, в каталонском монастыре Сан-Пере дел Бургал, а звуки фантастически совершенной скрипки, созданной кремонским мастером, магически преображают людские судьбы.</p>
 		</section>
-		<section class="image-book">
-			<img class="img-book" src="../images/Jaume Cabre.jpg">
-		</section>
+		<div class="image-book">
+			<img class="img-book" src="../images/Jaume_Cabre.jpg">
+		</div>
 		<section class="specifications-book">
 			<h3>О книге</h3>
 			<table>
@@ -89,29 +89,27 @@
 				<span>Книга о многом. Об отношениях детей и родителей, о вере, о любви, о дружбе, о холокосте, о мести, о предательстве, об обмане И так далее И так далее И так далее. Я не могла оторваться от книги. Я уверена, что буду перечитывать ее не раз. Настоятельно рекомендую включить «Я исповедуюсь» в список вашей литературы. Вы не пожалеете.</span>
 			</div>
 		</section>
-		<section class="similar-book">
-			<a href="Pennac.html"><img class="img-book" src="../images/Daniel Pennac.jpg"></a>
-			<a href="Mowat.html"><img class="img-book" src="../images/Farley McGill Mowat.jpg"></a>
-			<a href="Cabre.html"><img class="img-book" src="../images/Jaume Cabre.jpg"></a>
-			<a href="Mowat.html"><img class="img-book" src="../images/Farley McGill Mowat.jpg"></a>
-		</section>
+		<div class="similar-book">
+			<a href="Pennac.html"><img class="img-book" src="../images/Daniel_Pennac.jpg"></a>
+			<a href="Mowat.html"><img class="img-book" src="../images/Farley_McGill_Mowat.jpg"></a>
+		<a href="Cabre.html"><img class="img-book" src="../images/Jaume_Cabre.jpg"></a>
+		<a href="Mowat.html"><img class="img-book" src="../images/Farley_McGill_Mowat.jpg"></a>
+		</div>
 	</main>
 <aside class="right-aside-book"></aside>
-<section class="slider-book">SLIDER</section>
+
 <footer class="footer footer-book">
-<!-- <div class="container"> -->
 <div class="footer__inner">
-	<form class="footer__inner-add" href="#start">
-		<button class="top__btn">Вверх.</button>
-	</form>
-	<form class="footer__inner-add" action="../pages/add_book.html">
-		<button class="top__btn">Добавить книгу.</button>
-	</form>
-	<form class="footer__inner-add" action="../forms/review.html">
-		<button class="top__btn">Оставить отзыв на книгу.</button>
-	</form>
-</div>
-<!-- </div> -->
+            <div class="footer__inner-add" >
+                <a class="top__btn" href="#start">Вверх.</a>
+            </div>
+            <div class="footer__inner-add">
+                <a href="../pages/add_book.html" class="top__btn">Добавить книгу.</a>
+            </div>
+            <div class="footer__inner-add">
+                <a href="../forms/review.html" class="top__btn hide">Оставить отзыв на книгу.</a>
+            </div>
+        </div>
 </footer>
 </body>
 </html>
